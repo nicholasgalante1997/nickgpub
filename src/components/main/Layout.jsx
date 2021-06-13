@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { BookOutlined } from '@ant-design/icons';
 
 const CustomLayout = () => {
   const { SubMenu } = Menu;
@@ -16,7 +16,7 @@ const CustomLayout = () => {
             defaultOpenKeys={['sub1']}
             style={{ height: '100%', borderRight: 0 }}
           >
-            <SubMenu key="sub1" icon={<UserOutlined />} title="Sample Drop Menu">
+            <SubMenu key="sub1" icon={<BookOutlined />} title="Collections">
               <Menu.Item key="1">option1</Menu.Item>
               <Menu.Item key="2">option2</Menu.Item>
               <Menu.Item key="3">option3</Menu.Item>
