@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 // import { useLocation, useHistory } from 'react-router';
 
 import { Menu } from 'antd';
