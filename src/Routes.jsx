@@ -7,6 +7,7 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path={routerConstants.HOME} component={Home} />
+      <Route exact path={routerConstants.ADMIN_SIGN_IN} component={}
     </Switch>
   </BrowserRouter>
 );

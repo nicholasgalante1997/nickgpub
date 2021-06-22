@@ -2,9 +2,11 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import { BookOutlined } from '@ant-design/icons';
 
+import Header from '../header/Header';
+
 const CustomLayout = () => {
   const { SubMenu } = Menu;
-  const { Header, Content, Sider } = Layout;
+  const { Content, Sider } = Layout;
   return (
     <Layout>
       <Header className="header" />
