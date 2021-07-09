@@ -2,6 +2,8 @@ import React from 'react';
 import {
   Row, Col, Divider, Typography,
 } from 'antd';
+// import wave from '../../assets/wave.jpg';
+import { GiPentarrowsTornado } from 'react-icons/gi';
 import './styles/Home.scss';
 
 const {
@@ -11,6 +13,9 @@ const {
 const Home = () => (
   <Row className="home-container">
     <Col span={12} className="home-col">
+      <div className="home-image-container">
+        <GiPentarrowsTornado className="home-image" size={48} />
+      </div>
       <div className="home-left-title-container">
         <h1 className="home-text">For Your Consideration</h1>
       </div>
@@ -21,10 +26,12 @@ const Home = () => (
           you didn&apos;t notice. It&apos;s the bottom of the lake that Narcissus fell into
           when he reached down to save his falling phone from water damage. It&apos;s the
           crack in the Simpson&apos;s couch that we&apos;re all stuck in.&nbsp;
-          <b>
-            It&apos;s the
-            world you&apos;re visiting.
-          </b>
+          <p>
+            <b>
+              It&apos;s the
+              world you&apos;re visiting.
+            </b>
+          </p>
         </Paragraph>
         <Divider />
         <Text className="home-left-paragraph-bottom-text">
@@ -33,7 +40,7 @@ const Home = () => (
           <Text strong className="home-left-paragraph-bottom-text-strong">
             nothing but the truth,&nbsp;
           </Text>
-          but also other things as well from time to time. Treat this time
+          but also other things as well from time to time. Treat this place
           as you would an self-checkout line, and shove what&apos;s shiny
           in your pockets and leave the rest at the cashier.
         </Text>
