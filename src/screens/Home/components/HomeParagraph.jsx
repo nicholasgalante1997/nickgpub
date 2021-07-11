@@ -29,7 +29,7 @@ const HomeParagraph = () => (
         nothing but the truth,&nbsp;
       </Text>
       but also other things as well from time to time. Treat this place
-      as you would an self-checkout line, and shove what&apos;s shiny
+      as you would a self-checkout line, and shove what&apos;s shiny
       in your pockets and leave the rest at the cashier.
     </Text>
   </div>

@@ -10,7 +10,7 @@ const RightCol = ({ children }) => (
 );
 
 RightCol.propTypes = {
-  children: PropTypes.elementType.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 export default RightCol;

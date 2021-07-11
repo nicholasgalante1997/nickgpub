@@ -1,17 +1,10 @@
 import React from 'react';
-import {
-  Divider, Typography,
-} from 'antd';
-import './styles/Home.scss';
 import HomeAnimation from './components/HomeAnimation';
 import HomeTitle from './components/HomeTitle';
 import HomeParagraph from './components/HomeParagraph';
 import Layout from '../../components/common/Layout';
-import Carousel from '../../components/common/Carousel/Carousel';
-
-const {
-  Paragraph,
-} = Typography;
+import Article from '../../components/common/Article';
+import './styles/Home.scss';
 
 const left = () => (
   <>
@@ -23,14 +16,7 @@ const left = () => (
 
 const right = () => (
   <>
-    <h1 className="home-text-soft">Action Container</h1>
-    {' '}
-    <Divider className="divider">
-      <Paragraph className="divider-text">
-        Decide what content goes here maybe itll just be a cool icon
-      </Paragraph>
-      <Carousel />
-    </Divider>
+    <Article />
   </>
 );
 

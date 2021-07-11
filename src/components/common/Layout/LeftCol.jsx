@@ -10,7 +10,7 @@ const LeftCol = ({ children }) => (
 );
 
 LeftCol.propTypes = {
-  children: PropTypes.elementType.isRequired,
+  children: PropTypes.arrayOf(PropTypes.element).isRequired,
 };
 
 export default LeftCol;
