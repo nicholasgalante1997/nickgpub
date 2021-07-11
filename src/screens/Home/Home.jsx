@@ -7,6 +7,7 @@ import HomeAnimation from './components/HomeAnimation';
 import HomeTitle from './components/HomeTitle';
 import HomeParagraph from './components/HomeParagraph';
 import Layout from '../../components/common/Layout';
+import Carousel from '../../components/common/Carousel/Carousel';
 
 const {
   Paragraph,
@@ -28,6 +29,7 @@ const right = () => (
       <Paragraph className="divider-text">
         Decide what content goes here maybe itll just be a cool icon
       </Paragraph>
+      <Carousel />
     </Divider>
   </>
 );
