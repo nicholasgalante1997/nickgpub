@@ -28,9 +28,10 @@ const HomeParagraph = () => (
       <Text strong className="home-left-paragraph-bottom-text-strong">
         nothing but the truth,&nbsp;
       </Text>
-      but also other things as well from time to time. Treat this place
-      as you would a self-checkout line, and shove what&apos;s shiny
-      in your pockets and leave the rest at the cashier.
+      but also other things as well from time to time.
+    </Text>
+    <Text className="home-left-paragraph-bottom-text">
+     &nbsp; W
     </Text>
   </div>
 );

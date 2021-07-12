@@ -67,6 +67,20 @@ $green: #ade6d8;
         color: $complementary;
     }
 
+    &-right-feature-container {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding: 4px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-right-text {
+        color: $split-red;
+        font-family: 'Questrial', sans-serif;
+    }
+
 }
 
 .divider {

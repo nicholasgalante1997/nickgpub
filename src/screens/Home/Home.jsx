@@ -4,6 +4,7 @@ import HomeTitle from './components/HomeTitle';
 import HomeParagraph from './components/HomeParagraph';
 import Layout from '../../components/common/Layout';
 import Article from '../../components/common/Article';
+import FeatureTitle from './components/FeatureTitle';
 import './styles/Home.scss';
 
 const left = () => (
@@ -16,6 +17,7 @@ const left = () => (
 
 const right = () => (
   <>
+    <FeatureTitle />
     <Article />
   </>
 );
