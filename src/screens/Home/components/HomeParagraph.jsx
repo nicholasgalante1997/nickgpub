@@ -31,7 +31,7 @@ const HomeParagraph = () => (
       but also other things as well from time to time.
     </Text>
     <Text className="home-left-paragraph-bottom-text">
-     &nbsp; W
+     &nbsp;
     </Text>
   </div>
 );
