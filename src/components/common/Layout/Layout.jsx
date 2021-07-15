@@ -4,18 +4,22 @@ import { Row } from 'antd';
 import Nav from './Nav';
 import LeftCol from './LeftCol';
 import RightCol from './RightCol';
+import Ticker from '../Ticker';
 import './styles/Layout.scss';
 
 const Layout = ({ left, right }) => (
-  <Row className="layout-container">
-    <LeftCol>
-      <Nav />
-      {left()}
-    </LeftCol>
-    <RightCol>
-      {right()}
-    </RightCol>
-  </Row>
+  <>
+    <Row className="layout-container">
+      <LeftCol>
+        <Nav />
+        {left()}
+      </LeftCol>
+      <RightCol>
+        {right()}
+      </RightCol>
+    </Row>
+    <Ticker />
+  </>
 );
 
 Layout.propTypes = {

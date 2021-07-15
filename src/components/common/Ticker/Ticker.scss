@@ -1,3 +1,9 @@
+$primary: #add8e6;
+$complementary: #e6bbad;
+$split-red: #e6adbc;
+$indigo: #adbce6;
+$green: #ade6d8;
+
 * { box-sizing: border-box; }
 $duration: 30s;
 
@@ -31,18 +37,18 @@ $duration: 30s;
   
   position: fixed;
   bottom: 0;
-  width: 50%;
+  width: 100%;
   overflow: hidden;
-  height: 4rem;
-  background-color: rgba(#000, 0.9); 
+  height: 2rem;
   padding-left: 100%;
   box-sizing: content-box;
+  margin-top: 16px;
 
   .ticker {
 
     display: inline-block;
-    height: 4rem;
-    line-height: 4rem;  
+    height: 12px;
+    line-height: 2rem;  
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
@@ -61,9 +67,9 @@ $duration: 30s;
       display: inline-block;
 
       padding: 0 2rem;
-      font-size: 2rem;
-      color: white;   
-
+      font-size: 1rem;
+      color: $indigo;   
+      font-family: 'Questrial', sans-serif;
     }
 
   }
