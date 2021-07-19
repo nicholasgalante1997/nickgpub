@@ -1,30 +1,45 @@
 /* eslint-disable max-len */
 import React from 'react';
-import { PropTypes } from 'prop-types';
+// import { PropTypes } from 'prop-types';
 import './Ticker.scss';
 
-const Ticker = ({ data }) => {
-  console.log(data);
+const demonstration = `
+Lying in a Hammock at William Duffy’s Farm in Pine Island, Minnesota/ 
+
+By James Wright/
+
+Over my head, I see the bronze butterfly,/
+Asleep on the black trunk,/
+Blowing like a leaf in green shadow./
+Down the ravine behind the empty house,/  
+The cowbells follow one another/
+Into the distances of the afternoon./ 
+To my right,/
+In a field of sunlight between two pines,/ 
+The droppings of last year’s horses/
+Blaze up into golden stones./
+I lean back, as the evening darkens and comes on./   
+A chicken hawk floats over, looking for home./
+I have wasted my life./
+`;
+
+const Ticker = () => {
+  const content = demonstration.split('/');
   return (
     <div className="ticker-wrap">
       <div className="ticker">
-        <div className="ticker__item">Letterpress chambray brunch.</div>
-        <div className="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-        <div className="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
-        <div className="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
-        <div className="ticker__item">Authentic bitters seitan pug single-origin coffee whatever.</div>
-        <div className="ticker__item">Letterpress chambray brunch.</div>
-        <div className="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
-        <div className="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
-        <div className="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
-        <div className="ticker__item">Authentic bitters seitan pug single-origin coffee whatever.</div>
+        <div className="ticker__item-title">Welcome to For Your Consideration</div>
+        <div className="ticker__item-title">Here&apos;s our short selection of the day</div>
+        <div className="ticker__item-title">{content[0]}</div>
+        <div className="ticker__item-title">{content[1]}</div>
+        {content.slice(2).map((verse) => <div className="ticker__item-italic">{verse}</div>)}
       </div>
     </div>
   );
 };
 
-Ticker.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
+// Ticker.propTypes = {
+//   data: PropTypes.arrayOf(PropTypes.string).isRequired,
+// };
 
 export default Ticker;

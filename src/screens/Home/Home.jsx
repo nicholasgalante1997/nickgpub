@@ -9,8 +9,10 @@ import './styles/Home.scss';
 
 const left = () => (
   <>
-    <HomeAnimation />
-    <HomeTitle />
+    <div className="title-block">
+      <HomeAnimation />
+      <HomeTitle />
+    </div>
     <HomeParagraph />
   </>
 );
