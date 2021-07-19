@@ -44,8 +44,6 @@ const Article = () => {
     };
   }, []);
 
-  useEffect(() => console.log(contentHeight), [contentHeight]);
-
   return (
     <Layout className="article-container" style={contentHeight.height ? { height: contentHeight.height * 0.45 } : {}}>
       <Content>
