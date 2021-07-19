@@ -4,12 +4,14 @@ import {
 } from 'antd';
 import '../styles/Home.scss';
 
+import lorem from '../../../constants/dev/lorem/loremIpsum';
+
 const { Paragraph, Text } = Typography;
 
 const HomeParagraph = () => (
   <div className="home-left-paragraph-container">
     <Paragraph className="home-left-paragraph">
-      It&apos;s the gentrified part of the twilight zone.
+      {/* It&apos;s the gentrified part of the twilight zone.
       It&apos;s the elevator on the 3rd floor of MC Escher&apos;s paintings that
       you didn&apos;t notice. It&apos;s the bottom of the lake that Narcissus fell into
       when he reached down to save his falling phone from water damage. It&apos;s the
@@ -19,9 +21,9 @@ const HomeParagraph = () => (
           It&apos;s the
           world you&apos;re visiting.
         </b>
-      </p>
+      </p> */}
+      {lorem.medium}
     </Paragraph>
-    <Divider />
     <Text className="home-left-paragraph-bottom-text">
       We&apos;re here to bring you
       {' '}
@@ -33,6 +35,7 @@ const HomeParagraph = () => (
     <Text className="home-left-paragraph-bottom-text">
      &nbsp;
     </Text>
+    <Divider />
   </div>
 );
 

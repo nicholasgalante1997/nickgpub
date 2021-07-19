@@ -62,13 +62,24 @@ $duration: 30s;
     -webkit-animation-duration: $duration;
             animation-duration: $duration;
 
-    &__item {
+    &__item-title {
 
       display: inline-block;
 
       padding: 0 2rem;
       font-size: 1rem;
-      color: $indigo;   
+      color: black;   
+      font-family: 'Questrial', sans-serif;
+    }
+
+    &__item-italic {
+
+      display: inline-block;
+
+      padding: 0 2rem;
+      font-size: 1rem;
+      font-style: italic;
+      color: black;   
       font-family: 'Questrial', sans-serif;
     }
 

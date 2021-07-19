@@ -14,7 +14,7 @@ const Article = () => {
 
   useEffect(() => {
     (async () => {
-      await fetch('markdown/HelloWorld/Hemingway.md')
+      await fetch('markdown/Sample/Lorem.md')
         .then((response) => response.text())
         .then((text) => {
           setContent(text);
