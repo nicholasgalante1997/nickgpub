@@ -12,6 +12,18 @@ $green: #ade6d8;
         text-align: center;
     }
 
+    &-title {
+        color: white;
+        font-family: 'Questrial', sans-serif;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    &-sharp {
+        color: $split-red;
+        border: 2px round($number: 50) black;
+    }
+
     &-text-soft {
         color: $indigo;
         font-family: 'Questrial', sans-serif;
@@ -20,7 +32,6 @@ $green: #ade6d8;
     }
 
     &-left-title-container {
-        border-bottom: 2px solid black;
         width: fit-content;
         margin-left: 16px;
     }
@@ -55,10 +66,10 @@ $green: #ade6d8;
         padding: 0;
         display: flex;
         align-items: center;
+        align-self: center;
     }
 
     &-image {
-        display: block;
         margin-left: auto;
         margin-right: auto;
         animation-name: spin;
@@ -101,7 +112,9 @@ $green: #ade6d8;
 .title-block {
     display: flex;
     align-items: flex-start;
-    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 30vh;
 }
 
 @keyframes spin {

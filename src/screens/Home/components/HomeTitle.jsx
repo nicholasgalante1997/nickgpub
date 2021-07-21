@@ -3,7 +3,10 @@ import '../styles/Home.scss';
 
 const HomeTitle = () => (
   <div className="home-left-title-container">
-    <h1 className="home-text">Vantage Writ</h1>
+    <h1 className="home-title">
+      Vantage Writ
+      <span className="home-sharp">.</span>
+    </h1>
   </div>
 );
 

@@ -4,7 +4,7 @@ import '../styles/Home.scss';
 
 const HomeAnimation = () => (
   <div className="home-image-container">
-    <GiPentarrowsTornado className="home-image" size={48} />
+    <GiPentarrowsTornado className="home-image" size={96} />
   </div>
 );
 

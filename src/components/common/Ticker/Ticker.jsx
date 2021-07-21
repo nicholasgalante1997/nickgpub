@@ -28,7 +28,7 @@ const Ticker = () => {
   return (
     <div className="ticker-wrap">
       <div className="ticker">
-        <div className="ticker__item-title">Welcome to For Your Consideration</div>
+        <div className="ticker__item-title">Welcome to Vantage Writ.</div>
         <div className="ticker__item-title">Here&apos;s our short selection of the day</div>
         <div className="ticker__item-title">{content[0]}</div>
         <div className="ticker__item-title">{content[1]}</div>
