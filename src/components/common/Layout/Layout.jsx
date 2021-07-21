@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row } from 'antd';
-// import Nav from './Nav';
+import Nav from './Nav';
 import LeftCol from './LeftCol';
 import RightCol from './RightCol';
 import Ticker from '../Ticker';
@@ -11,7 +11,7 @@ const Layout = ({ left, right }) => (
   <>
     <Row className="layout-container">
       <LeftCol>
-        {/* <Nav /> */}
+        <Nav />
         {left()}
       </LeftCol>
       <RightCol>

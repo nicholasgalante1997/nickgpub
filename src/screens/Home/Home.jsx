@@ -1,4 +1,5 @@
 import React from 'react';
+import { Divider } from 'antd';
 import HomeAnimation from './components/HomeAnimation';
 import HomeTitle from './components/HomeTitle';
 import HomeParagraph from './components/HomeParagraph';
@@ -11,9 +12,10 @@ const left = () => (
   <>
     <div className="title-block">
       <HomeTitle />
+      <Divider />
       <HomeAnimation />
+      <HomeParagraph />
     </div>
-    <HomeParagraph />
   </>
 );
 

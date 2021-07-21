@@ -17,6 +17,8 @@ $green: #ade6d8;
         font-family: 'Questrial', sans-serif;
         text-align: center;
         font-size: 5rem;
+        margin-left: 16px;
+        margin-bottom: 0px;
     }
 
     &-sharp {
@@ -31,26 +33,25 @@ $green: #ade6d8;
         font-weight: 900;
     }
 
-    &-left-title-container {
-        width: fit-content;
-        margin-left: 16px;
-    }
 
     &-left-paragraph-container {
         margin-top: 16px;
-        margin-right: 64px;
-        // margin-left: 24px;
-        // text-align: center;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     &-left-paragraph {
         font-family: 'Questrial', sans-serif;
+        text-align: center;
     }
 
     &-left-paragraph-bottom-text {
         color: $indigo;
         font-weight: 700;
         font-family: 'Questrial', sans-serif;
+        text-align: center;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     &-left-paragraph-bottom-text-strong {

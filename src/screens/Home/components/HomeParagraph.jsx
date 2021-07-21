@@ -1,12 +1,10 @@
 import React from 'react';
-import {
-  Divider, Typography,
-} from 'antd';
+import { Typography } from 'antd';
 import '../styles/Home.scss';
 
 import lorem from '../../../constants/dev/lorem/loremIpsum';
 
-const { Paragraph, Text } = Typography;
+const { Paragraph } = Typography;
 
 const HomeParagraph = () => (
   <div className="home-left-paragraph-container">
@@ -24,18 +22,6 @@ const HomeParagraph = () => (
       </p> */}
       {lorem.medium}
     </Paragraph>
-    <Text className="home-left-paragraph-bottom-text">
-      We&apos;re here to bring you
-      {' '}
-      <Text strong className="home-left-paragraph-bottom-text-strong">
-        nothing but the truth,&nbsp;
-      </Text>
-      but also other things as well from time to time.
-    </Text>
-    <Text className="home-left-paragraph-bottom-text">
-     &nbsp;
-    </Text>
-    <Divider />
   </div>
 );
 
