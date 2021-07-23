@@ -6,38 +6,51 @@ $green: #ade6d8;
 
 .home {
 
-    &-text {
-        color: white;
-        font-family: 'Questrial', sans-serif;
-        text-align: center;
+    // HeroSection.jsx
+    &-hero-section {
+        // flex 
+        display: flex;
+        flex-direction: row;
+
+        // spacing
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 24px;
     }
 
+    &-hero-container {
+        // flex
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    // HomeTitle.jsx
     &-title {
+        // font
         color: white;
         font-family: 'Questrial', sans-serif;
-        text-align: center;
         font-size: 5rem;
+
+        // spacing
+        text-align: center;
         margin-left: 16px;
         margin-bottom: 0px;
     }
 
     &-sharp {
+        // font
         color: $split-red;
-        border: 2px round($number: 50) black;
     }
 
-    &-text-soft {
-        color: $indigo;
-        font-family: 'Questrial', sans-serif;
-        text-align: center;
-        font-weight: 900;
-    }
-
-
+    // HomeParagraph.jsx
     &-left-paragraph-container {
         margin-top: 16px;
         margin-left: 24px;
         margin-right: 24px;
+        padding: 24px;
+        max-width: 50vw;
     }
 
     &-left-paragraph {
@@ -45,41 +58,37 @@ $green: #ade6d8;
         text-align: center;
     }
 
-    &-left-paragraph-bottom-text {
-        color: $indigo;
-        font-weight: 700;
-        font-family: 'Questrial', sans-serif;
-        text-align: center;
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-
-    &-left-paragraph-bottom-text-strong {
-        color: $indigo;
-        font-weight: 900;
-        font-style: italic;
-        font-family: 'Questrial', sans-serif;
-    }
-
+    // HomeAnimation.jsx
     &-image-container {
+        // dimensions
         max-height: 200px;
         max-width: 200px;
-        padding: 0;
+
+        // flex
         display: flex;
+
+        // spacing
+        padding: 0;
         align-items: center;
         align-self: center;
     }
 
     &-image {
+        // spacing
         margin-left: auto;
         margin-right: auto;
+
+        // animation
         animation-name: spin;
         animation-duration: 3000ms;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
+
+        // color
         color: $indigo;
     }
 
+    // NOTE: deprecated
     &-right-feature-container {
         margin-top: 4px;
         margin-bottom: 4px;
@@ -89,6 +98,7 @@ $green: #ade6d8;
         align-items: flex-start;
     }
 
+    // NOTE: deprecated
     &-right-text {
         color: $split-red;
         font-family: 'Questrial', sans-serif;
@@ -97,13 +107,8 @@ $green: #ade6d8;
 }
 
 .divider {
-    max-width: '50%';
-    text-align: center;
-
-    &-text {
-        align-self: center;
-        float: bottom;
-    }
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 .header {

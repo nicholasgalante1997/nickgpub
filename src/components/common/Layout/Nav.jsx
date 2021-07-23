@@ -22,6 +22,11 @@ const Nav = () => {
       mode="horizontal"
       className="layout-nav"
     >
+      <Menu.Item key="logo">
+        <h1 className="layout-nav-title">
+          Vantage Writ
+        </h1>
+      </Menu.Item>
       <Menu.Item key="home" icon={<HomeOutlined />}>
         Home
       </Menu.Item>
@@ -38,7 +43,7 @@ const Nav = () => {
           <Menu.Item key="Contributing" className="layout-text">To Contribute</Menu.Item>
         </Menu.ItemGroup>
       </SubMenu>
-      <Menu.Item key="admin" icon={<UserOutlined />} disabled>
+      <Menu.Item key="admin" icon={<UserOutlined />} disabled className="layout-nav-author">
         Author
       </Menu.Item>
     </Menu>

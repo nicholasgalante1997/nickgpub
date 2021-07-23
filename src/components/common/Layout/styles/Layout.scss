@@ -1,4 +1,5 @@
 $primary: #add8e6;
+$bright: #baade6;
 $complementary: #e6bbad;
 $split-red: #e6adbc;
 $indigo: #adbce6;
@@ -6,17 +7,60 @@ $green: #ade6d8;
 
 .layout {
     &-container {
+        // spacing
         margin: 0 auto;
         padding-bottom: 8px;
         justify-content: center;
+
+        // position
         position: absolute;
-        top: 0;
-        bottom: 16px;
+        top: 3rem;
+        bottom: 0;
         left: 0;
         right: 0;
-        margin-bottom: 4px;
+
+        // background
+        background: linear-gradient(to bottom right, $green, #fff);
     }
 
+    &-nav {
+        // font
+        font-family: 'Questrial', sans-serif;
+        color: white;
+
+        // spacing
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+
+        // background/border
+        background: $primary;
+        border: none;
+
+        // sizing
+        height: 3rem;
+    }  
+    
+    &-nav-author {
+        // spacing
+        margin-left: auto;
+    }
+
+    &-nav-title {
+        // font 
+        font-family: 'Questrial', sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    &-text {
+      // font
+      color: black;
+      font-family: 'Questrial', sans-serif;
+      font-size: 12px;
+    }
+
+    // NOTE: deprecated
     &-col {
         display: flex;
         flex: 1;
@@ -29,6 +73,7 @@ $green: #ade6d8;
         overflow: hidden;
     }
 
+    // NOTE: deprecated
     &-col-right {
         display: flex;
         flex: 1;
@@ -41,25 +86,4 @@ $green: #ade6d8;
         border-bottom-right-radius: 4px;
         padding: 16px;
     }
-
-    &-nav {
-        font-family: 'Questrial', sans-serif;
-        margin: -8px;
-        padding-bottom: 4px;
-        background: none;
-        border: none;
-    }    
-
-    &-text {
-      color: black;
-      font-family: 'Questrial', sans-serif;
-      font-size: 12px;
-    }
 }
-
-// border-radius: 4px;
-// background: none;
-// color: black;
-// font-family: 'Questrial', sans-serif;
-// margin-bottom: 4%;
-// margin-top: 2%;
