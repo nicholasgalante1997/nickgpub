@@ -3,7 +3,7 @@ export default {
   ADMIN_SIGN_IN: '/admin/verify',
   ANTHOLOGIES: '/anthologies',
   ANTHOLOGY: '/anthologies/:id',
-  CONTRIBUTIONS: '/contributions',
+  CONTRIBUTIONS: '/contribution',
   DEVELOPER: '/developer',
   HOME: '/',
   MANTRAS: '/mantras',

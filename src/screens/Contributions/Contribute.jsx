@@ -1,5 +1,10 @@
 import React from 'react';
+import Layout from '../../components/common/Layout';
 
-const Contribute = () => (<>Contribute</>);
+const Contribute = () => (
+  <Layout>
+    To Contribute
+  </Layout>
+);
 
 export default Contribute;

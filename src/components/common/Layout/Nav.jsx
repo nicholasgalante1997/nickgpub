@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-// import { useHistory, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
 import {
   HomeOutlined, BookOutlined, UserOutlined, BulbOutlined,
@@ -9,15 +9,33 @@ import './styles/Layout.scss';
 const { SubMenu } = Menu;
 
 const Nav = () => {
-  const [current, setCurrent] = useState('home');
+  const [current, setCurrent] = useState();
+  const location = useLocation();
 
-  const handleClick = (e) => {
-    setCurrent(e.key);
-  };
+  useEffect(() => {
+    switch (location.pathname) {
+      case '/anthologies':
+        setCurrent('anthology');
+        break;
+      case '/about':
+        setCurrent('about');
+        break;
+      case '/mantras':
+        setCurrent('mantras');
+        break;
+      case '/developer':
+        setCurrent('developer');
+        break;
+      case '/contribution':
+        setCurrent('contribution');
+        break;
+      default:
+        setCurrent('home');
+    }
+  }, [location]);
 
   return (
     <Menu
-      onClick={handleClick}
       selectedKeys={[current]}
       mode="horizontal"
       className="layout-nav"
@@ -27,20 +45,30 @@ const Nav = () => {
           Vantage Writ
         </h1>
       </Menu.Item>
-      <Menu.Item key="home" icon={<HomeOutlined />}>
-        Home
+      <Menu.Item key="home" icon={<HomeOutlined />} className="layout-nav-link">
+        <Link to="/" className="layout-nav-link">
+          Home
+        </Link>
       </Menu.Item>
-      <Menu.Item key="anthology" icon={<BookOutlined />}>
-        Anthology
+      <Menu.Item key="anthology" icon={<BookOutlined />} className="layout-nav-link">
+        <Link to="/anthologies" className="layout-nav-link">Anthology</Link>
       </Menu.Item>
-      <SubMenu key="SubMenu" icon={<BulbOutlined />} title="Considerations">
-        <Menu.ItemGroup title="Absurd" className="layout-text">
-          <Menu.Item key="About" className="layout-text">About</Menu.Item>
-          <Menu.Item key="Mantras" className="layout-text">Mantras</Menu.Item>
+      <SubMenu key="SubMenu" icon={<BulbOutlined />} title="Considerations" className="layout-nav-link">
+        <Menu.ItemGroup title="Absurd">
+          <Menu.Item key="about">
+            <Link to="/about" className="layout-nav-link">About</Link>
+          </Menu.Item>
+          <Menu.Item key="mantras">
+            <Link to="/mantras" className="layout-nav-link">Mantras</Link>
+          </Menu.Item>
         </Menu.ItemGroup>
-        <Menu.ItemGroup title="Methodical" className="layout-text">
-          <Menu.Item key="For Developers" className="layout-text">For Developers</Menu.Item>
-          <Menu.Item key="Contributing" className="layout-text">To Contribute</Menu.Item>
+        <Menu.ItemGroup title="Methodical">
+          <Menu.Item key="developer">
+            <Link to="/developer" className="layout-nav-link">For Developers</Link>
+          </Menu.Item>
+          <Menu.Item key="contribution">
+            <Link to="/contribution" className="layout-nav-link">To Contribute</Link>
+          </Menu.Item>
         </Menu.ItemGroup>
       </SubMenu>
       <Menu.Item key="admin" icon={<UserOutlined />} disabled className="layout-nav-author">
