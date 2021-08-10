@@ -3,6 +3,7 @@ $complementary: #e6bbad;
 $split-red: #e6adbc;
 $indigo: #adbce6;
 $green: #ade6d8;
+$midnight: #728bd4;
 
 .home {
 
@@ -17,7 +18,11 @@ $green: #ade6d8;
         align-items: center;
         margin-left: 24px;
 
-        min-height: 50vh;
+        // size
+        min-height: 40vh;
+
+        // accent
+        text-decoration: underline wavy white 4px;
     }
 
     &-hero-container {
@@ -62,6 +67,7 @@ $green: #ade6d8;
         text-align: center;
         margin-left: 16px;
         margin-bottom: 0px;
+        padding: 8px;
     }
 
     &-sharp {
@@ -71,7 +77,6 @@ $green: #ade6d8;
 
     // HomeParagraph.jsx
     &-left-paragraph-container {
-        margin-top: 16px;
         margin-left: 24px;
         margin-right: 24px;
         padding: 24px;
@@ -81,6 +86,7 @@ $green: #ade6d8;
     &-left-paragraph {
         font-family: 'Questrial', sans-serif;
         text-align: center;
+        font-size: 20px;
     }
 
     // HomeAnimation.jsx
@@ -110,7 +116,7 @@ $green: #ade6d8;
         animation-timing-function: linear;
 
         // color
-        color: $indigo;
+        color: $midnight;
     }
 
     // NOTE: deprecated
