@@ -36,7 +36,6 @@ const Nav = () => {
 
   return (
     <Menu
-      selectedKeys={[current]}
       mode="horizontal"
       className="layout-nav"
     >
@@ -50,7 +49,7 @@ const Nav = () => {
           Home
         </NavLink>
       </Menu.Item>
-      <Menu.Item key="anthology" icon={<BookOutlined />} className="layout-nav-link">
+      <Menu.Item key="anthology" icon={<BookOutlined />} className="layout-nav-link" style={current === 'anthology' ? { borderBottomWidth: 2, borderBottomColor: '#add8e6' } : {}}>
         <NavLink to="/anthologies" className="layout-nav-link">Anthology</NavLink>
       </Menu.Item>
       <SubMenu key="SubMenu" icon={<BulbOutlined />} title="Considerations" className="layout-nav-link">

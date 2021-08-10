@@ -4,6 +4,8 @@ $complementary: #e6bbad;
 $split-red: #e6adbc;
 $indigo: #adbce6;
 $green: #ade6d8;
+$dark: #2a2a2a;
+$midnight: #728bd4;
 
 .layout {
     &-container {
@@ -17,9 +19,9 @@ $green: #ade6d8;
         top: 3rem;
         left: 0;
         right: 0;
-
+        bottom: 0;
         // background
-        background: linear-gradient(to bottom right, $green, #fff);
+        background: linear-gradient(to bottom right, $dark, #fff);
     }
 
     &-nav {
@@ -32,7 +34,7 @@ $green: #ade6d8;
         padding-bottom: 0.5rem;
 
         // background/border
-        background: $primary;
+        background: $midnight;
         border: none;
 
         // sizing
@@ -48,6 +50,10 @@ $green: #ade6d8;
         color: black;
         font-size: 16px;
         font-family: 'Questrial', sans-serif;
+
+        &:active {
+            color: white;
+        }
     }
 
     &-nav-title {
