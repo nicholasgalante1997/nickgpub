@@ -16,7 +16,7 @@ $midnight: #728bd4;
 
         // position
         position: absolute;
-        top: 3rem;
+        top: 4rem;
         left: 0;
         right: 0;
         bottom: 0;
@@ -32,13 +32,15 @@ $midnight: #728bd4;
         // spacing
         margin-bottom: 2rem;
         padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
 
         // background/border
         background: $midnight;
         border: none;
 
         // sizing
-        height: 3rem;
+        height: 4rem;
+        z-Index: 100;
     }  
     
     &-nav-author {
@@ -62,6 +64,7 @@ $midnight: #728bd4;
         color: white;
         font-weight: 600;
         font-size: 2.5rem;
+        text-shadow: 8px 4px 2px black;
     }
 
     &-text {
