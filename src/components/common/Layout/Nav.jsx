@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
 import {
   HomeOutlined, BookOutlined, UserOutlined, BulbOutlined,
@@ -46,28 +46,28 @@ const Nav = () => {
         </h1>
       </Menu.Item>
       <Menu.Item key="home" icon={<HomeOutlined />} className="layout-nav-link">
-        <Link to="/" className="layout-nav-link">
+        <NavLink to="/" className="layout-nav-link">
           Home
-        </Link>
+        </NavLink>
       </Menu.Item>
       <Menu.Item key="anthology" icon={<BookOutlined />} className="layout-nav-link">
-        <Link to="/anthologies" className="layout-nav-link">Anthology</Link>
+        <NavLink to="/anthologies" className="layout-nav-link">Anthology</NavLink>
       </Menu.Item>
       <SubMenu key="SubMenu" icon={<BulbOutlined />} title="Considerations" className="layout-nav-link">
         <Menu.ItemGroup title="Absurd">
           <Menu.Item key="about">
-            <Link to="/about" className="layout-nav-link">About</Link>
+            <NavLink to="/about" className="layout-nav-link">About</NavLink>
           </Menu.Item>
           <Menu.Item key="mantras">
-            <Link to="/mantras" className="layout-nav-link">Mantras</Link>
+            <NavLink to="/mantras" className="layout-nav-link">Mantras</NavLink>
           </Menu.Item>
         </Menu.ItemGroup>
         <Menu.ItemGroup title="Methodical">
           <Menu.Item key="developer">
-            <Link to="/developer" className="layout-nav-link">For Developers</Link>
+            <NavLink to="/developer" className="layout-nav-link">For Developers</NavLink>
           </Menu.Item>
           <Menu.Item key="contribution">
-            <Link to="/contribution" className="layout-nav-link">To Contribute</Link>
+            <NavLink to="/contribution" className="layout-nav-link">To Contribute</NavLink>
           </Menu.Item>
         </Menu.ItemGroup>
       </SubMenu>

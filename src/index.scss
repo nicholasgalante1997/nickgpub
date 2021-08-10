@@ -1,0 +1,9 @@
+$primary: #add8e6;
+$complementary: #e6bbad;
+$split-red: #e6adbc;
+$indigo: #adbce6;
+$green: #ade6d8;
+
+html, body {
+    background-color: linear-gradient(to bottom right, $green, #fff);
+}

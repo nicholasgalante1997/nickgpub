@@ -15,7 +15,6 @@ $green: #ade6d8;
         // position
         position: absolute;
         top: 3rem;
-        bottom: 0;
         left: 0;
         right: 0;
 
@@ -46,7 +45,7 @@ $green: #ade6d8;
     }
 
     &-nav-link {
-        color: white;
+        color: black;
         font-size: 16px;
         font-family: 'Questrial', sans-serif;
     }
