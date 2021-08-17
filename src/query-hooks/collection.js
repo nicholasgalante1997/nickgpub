@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 
 const getCollections = async () => {
-  const target = `${process.env.DEV_API}/collections`;
+  const target = `${process.env.REACT_APP_HEROKU_API}/collections`;
   const { data } = await axios.get(target);
   return data;
 };

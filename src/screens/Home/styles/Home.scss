@@ -5,6 +5,18 @@ $indigo: #adbce6;
 $green: #ade6d8;
 $midnight: #728bd4;
 
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $primary;
+}
+
+hr {
+    max-width: 10vw;
+    border: 1px solid black;
+}
+
 .home {
 
     // HeroSection.jsx
@@ -22,7 +34,7 @@ $midnight: #728bd4;
         min-height: 40vh;
 
         // accent
-        text-decoration: underline wavy white 4px;
+        text-decoration: underline solid white 4px;
     }
 
     &-hero-container {
@@ -72,7 +84,11 @@ $midnight: #728bd4;
 
     &-sharp {
         // font
-        color: $split-red;
+        min-height: 1rem;
+        min-width: 1rem;
+        background-color: $midnight;
+        border-radius: 0.5rem;
+        display: inline-block;
     }
 
     // HomeParagraph.jsx

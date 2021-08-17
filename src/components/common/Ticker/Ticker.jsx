@@ -29,7 +29,9 @@ const Ticker = () => {
     <div className="ticker-wrap">
       <div className="ticker">
         <div className="ticker__item-title">Welcome to Vantage Writ.</div>
-        <div className="ticker__item-title">Here&apos;s our short selection of the day</div>
+        <div className="ticker__item-title">Here&apos;s our short selection of the month</div>
+        <div className="ticker__item-title">Our intern Rhonda worked really hard picking the right piece.</div>
+        <div className="ticker__item-title">Don&apos;t shit on it.</div>
         <div className="ticker__item-title">{content[0]}</div>
         <div className="ticker__item-title">{content[1]}</div>
         {content.slice(2).map((verse) => <div className="ticker__item-italic">{verse}</div>)}

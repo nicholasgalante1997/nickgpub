@@ -1,16 +1,46 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useEffect, useState } from 'react';
 import { Modal, Button } from 'antd';
+import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router';
 
-const Heimdallr = ({ visible, setVisible }) => {
-    return ( 
+const Heimdallr = () => {
+  const [vis, setVis] = useState(false);
+  const history = useHistory();
+  const {
+    register, handleSubmit, watch, formState,
+  } = useForm();
 
-     );
-}
+  useEffect(() => {
+    setTimeout(() => setVis(true), 500);
+  }, []);
 
-Heimdallr.propTypes = {
-    visible: PropTypes.bool.isRequired,
-    setVisible: PropTypes.func.isRequired,
-}
- 
+  useEffect(() => console.log(formState), [formState]);
+  useEffect(() => console.log(watch('username')));
+
+  const handleCancel = () => {
+    setVis(false);
+    history.push('/');
+  };
+
+  const onSubmit = (data) => console.log(data);
+
+  return (
+    <Modal
+      title="Editors, Contributors, General Narcissist's Sign In"
+      visible={vis}
+      footer={[
+        <Button key="back" onClick={handleCancel}>
+          Cancel (woop woop woop woop)
+        </Button>,
+      ]}
+    >
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <input id="username" defaultValue="authors" name="username" {...register('username')} />
+      </form>
+    </Modal>
+  );
+};
 export default Heimdallr;

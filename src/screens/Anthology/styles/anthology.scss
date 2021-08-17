@@ -1,0 +1,28 @@
+$primary: #add8e6;
+$complementary: #e6bbad;
+$split-red: #e6adbc;
+$indigo: #adbce6;
+$green: #ade6d8;
+$midnight: #728bd4;
+
+.anthology {
+
+    &-container {
+        padding: 0;
+        align-self: flex-start;
+        float: left;
+        margin-left: -36vw;
+    }
+
+    &-header {
+        font-size: 3rem;
+        font-family: "Questrial", sans-serif;
+        color: $primary;
+    }
+
+    &-break {
+        border: 1px solid black;
+        min-width: 30vw;
+    }
+}
+
