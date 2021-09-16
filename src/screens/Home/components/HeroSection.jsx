@@ -1,7 +1,6 @@
 import React from 'react';
 import HomeTitle from './HomeTitle';
 import HomeAnimation from './HomeAnimation';
-import HomeParagraph from './HomeParagraph';
 import '../styles/Home.scss';
 
 const HeroSection = () => (
@@ -10,7 +9,6 @@ const HeroSection = () => (
       <HomeAnimation />
       <HomeTitle />
     </div>
-    <HomeParagraph />
   </div>
 );
 
