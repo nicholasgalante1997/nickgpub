@@ -1,6 +1,7 @@
 export default {
   ABOUT: '/about',
   ADMIN_SIGN_IN: '/admin/verify',
+  ADMIN_DASHBOARD_ROOT: '/admin/:username/root',
   ANTHOLOGIES: '/anthologies',
   ANTHOLOGY: '/anthologies/:id',
   CONTRIBUTIONS: '/contribution',

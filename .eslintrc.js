@@ -18,6 +18,6 @@ module.exports = {
     'react',
   ],
   rules: {
-    "no-console": "off"
+    'no-console': 'off',
   },
 };

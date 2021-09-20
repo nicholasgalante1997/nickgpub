@@ -8,12 +8,14 @@ import About from './screens/About';
 import Contribute from './screens/Contributions';
 import Developer from './screens/Developer';
 import Mantras from './screens/Mantras';
+import WritersHub from './screens/Admin/Dashboard/WritersHub';
 
 const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path={routerConstants.ABOUT} component={About} />
       <Route exact path={routerConstants.ADMIN_SIGN_IN} component={AuthContainer} />
+      <Route exact path={routerConstants.ADMIN_DASHBOARD_ROOT} component={WritersHub} />
       <Route exact path={routerConstants.ANTHOLOGIES} component={Anthologies} />
       <Route exact path={routerConstants.CONTRIBUTIONS} component={Contribute} />
       <Route exact path={routerConstants.DEVELOPER} component={Developer} />
