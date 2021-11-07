@@ -1,8 +1,13 @@
+---
+title: Lorem Ipsum
+slug: lorem-ip
+---
 # Lorem Ipsum
+
 ## Edition 001 - July 2021
+
 ---
 **Nicholas Joseph**
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper eget duis at tellus at urna. Tincidunt arcu non sodales neque sodales ut etiam sit. Risus nec feugiat in fermentum posuere urna nec. Mauris pharetra et ultrices neque. Quam nulla porttitor massa id. Mauris augue neque gravida in. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Et pharetra pharetra massa massa ultricies mi. Enim facilisis gravida neque convallis a cras semper auctor. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.
 

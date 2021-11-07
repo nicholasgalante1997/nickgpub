@@ -9,22 +9,19 @@ const Heimdallr = () => {
   const [vis, setVis] = useState(false);
   const history = useHistory();
   const {
-    register, handleSubmit, watch, formState,
+    register, handleSubmit, // watch, formState,
   } = useForm();
 
   useEffect(() => {
     setTimeout(() => setVis(true), 500);
   }, []);
 
-  useEffect(() => console.log(formState), [formState]);
-  useEffect(() => console.log(watch('username')));
-
   const handleCancel = () => {
     setVis(false);
     history.push('/');
   };
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = () => { };
 
   return (
     <Modal

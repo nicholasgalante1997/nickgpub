@@ -1,10 +1,10 @@
 import React from 'react';
-import { GiPentarrowsTornado } from 'react-icons/gi';
+import Logo from '../../../components/common/Logo';
 import '../styles/Home.scss';
 
 const HomeAnimation = () => (
   <div className="home-image-container">
-    <GiPentarrowsTornado className="home-image" size={96} />
+    <Logo className="home-image" size={96} />
   </div>
 );
 

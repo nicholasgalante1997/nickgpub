@@ -12,8 +12,9 @@ $midnight: #728bd4;
         // spacing
         margin: 0 auto;
         padding-bottom: 8px;
-        justify-content: center;
 
+        display: flex;
+        flex-direction: column;
         // position
         position: absolute;
         top: 4rem;
@@ -21,7 +22,7 @@ $midnight: #728bd4;
         right: 0;
         bottom: 0;
         // background
-        background: linear-gradient(to bottom right, $dark, #fff);
+        background-color: #1F2937;
     }
 
     &-nav {
@@ -35,7 +36,7 @@ $midnight: #728bd4;
         padding-top: 0.5rem;
 
         // background/border
-        background: $midnight;
+        background: $primary;
         border: none;
 
         // sizing
@@ -74,30 +75,4 @@ $midnight: #728bd4;
       font-size: 12px;
     }
 
-    // NOTE: deprecated
-    &-col {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        padding: 8px;
-        height: '100%';
-        background: linear-gradient(to bottom right, $green, #fff);
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        overflow: hidden;
-    }
-
-    // NOTE: deprecated
-    &-col-right {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: '100%';
-        background: linear-gradient(to bottom right, #fff, $primary);
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        padding: 16px;
-    }
 }
