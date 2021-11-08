@@ -1,6 +1,5 @@
 // Web Dependencies
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 
 // State Management
 import {
@@ -26,9 +25,6 @@ const store = createStore(root, applyMiddleware(thunk));
 
 function App() {
   const [userStateContext, setUserStateContext] = useState(defaultUserContext);
-  useEffect(() => {
-    (async () => console.log(await axios.get('markdown/sample/Lorem.md')))();
-  }, []);
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
