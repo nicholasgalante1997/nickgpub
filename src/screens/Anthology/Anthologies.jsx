@@ -1,15 +1,26 @@
 import React from 'react';
+import useGetCollections from '../../query-hooks/collection';
 import Layout from '../../components/common/Layout';
-// import useGetCollections from '../../query-hooks/collection';
-import AnthologyHeader from './components/AnthHeader';
+import AnthologyHeader from './components/AnthologyHeader';
+import './styles/anthology.scss';
 
-// eslint-disable-next-line arrow-body-style
 const Anthologies = () => {
-  // const collections = useGetCollections();
+  const {
+    data, isError, error, isLoading,
+  } = useGetCollections();
 
-  // useEffect(() => {
-  //   console.log(collections);
-  // }, [collections]);
+  if (isLoading) {
+    // handle loading state
+  }
+
+  if (isError) {
+    // handle error state
+    console.log(error);
+  }
+
+  if (data) {
+    console.log(data);
+  }
 
   return (
     <Layout>

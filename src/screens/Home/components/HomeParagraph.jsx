@@ -11,7 +11,6 @@ const HomeParagraph = () => (
     <Paragraph className="home-paragraph">
       {homeParagraph}
     </Paragraph>
-    <hr />
   </div>
 );
 

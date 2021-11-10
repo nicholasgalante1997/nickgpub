@@ -5,24 +5,28 @@ $indigo: #adbce6;
 $green: #ade6d8;
 $midnight: #728bd4;
 
+hr {
+    border-top: 2px solid white;
+    border-radius: 8px;
+    min-width: 100%;
+    align-self: flex-start;
+}
+
 .anthology {
-
-    &-container {
-        padding: 0;
-        align-self: flex-start;
-        float: left;
-        margin-left: -36vw;
-    }
-
-    &-header {
-        font-size: 3rem;
-        font-family: "Questrial", sans-serif;
-        color: $primary;
-    }
-
-    &-break {
-        border: 1px solid black;
-        min-width: 30vw;
-    }
+  &-header {
+      &-container {
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          max-width: 30vw;
+      }
+      &-main {
+          font-size: 3rem;
+          color: $primary;
+          margin-bottom: 0em
+      }
+  }
 }
 
